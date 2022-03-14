@@ -1,0 +1,230 @@
+ERROR - 2022-01-26 07:40:54 --> Table 'db_datehunter.tb_users' doesn't exist
+CRITICAL - 2022-01-26 07:40:54 --> Table 'db_datehunter.tb_users' doesn't exist
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 07:47:20 --> Cannot use object of type stdClass as array
+#0 C:\wamp64\www\datehunter777\system\View\View.php(210): include()
+#1 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('dashboard_view', Array, true)
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(39): view('dashboard_view', Array)
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 07:57:54 --> Cannot use object of type App\Models\UsersModel as array
+#0 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Login->auth()
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-26 08:24:31 --> Unknown column 'U.id_user' in 'on clause'
+CRITICAL - 2022-01-26 08:24:31 --> Unknown column 'U.id_user' in 'on clause'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-26 08:25:13 --> Unknown column 'u.id_user' in 'on clause'
+CRITICAL - 2022-01-26 08:25:13 --> Unknown column 'u.id_user' in 'on clause'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-26 08:30:22 --> Column 'id' in on clause is ambiguous
+CRITICAL - 2022-01-26 08:30:22 --> Column 'id' in on clause is ambiguous
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-26 08:30:50 --> Column 'id' in on clause is ambiguous
+CRITICAL - 2022-01-26 08:30:50 --> Column 'id' in on clause is ambiguous
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 08:39:36 --> Undefined index: id
+#0 C:\wamp64\www\datehunter777\app\Controllers\Login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 47, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Login->auth()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-26 08:39:58 --> Undefined index: id
+#0 C:\wamp64\www\datehunter777\app\Controllers\Login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 47, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Login->auth()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-26 09:09:19 --> Column 'id_user' in on clause is ambiguous
+CRITICAL - 2022-01-26 09:09:19 --> Column 'id_user' in on clause is ambiguous
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-26 09:10:49 --> Column 'id_user' in on clause is ambiguous
+CRITICAL - 2022-01-26 09:10:49 --> Column 'id_user' in on clause is ambiguous
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 12:03:48 --> Undefined index: id_user
+#0 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 12, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-26 12:05:48 --> Undefined index: id
+#0 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 12, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-26 12:06:28 --> Undefined index: id
+#0 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 12, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-26 12:19:42 --> Unknown column 'p.nameproduct' in 'field list'
+CRITICAL - 2022-01-26 12:19:42 --> Unknown column 'p.nameproduct' in 'field list'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT p.namepr...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.namepr...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.namepr...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(27): CodeIgniter\Database\BaseConnection->query('SELECT p.namepr...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-26 12:20:06 --> Unknown column 'nameproduct' in 'field list'
+CRITICAL - 2022-01-26 12:20:06 --> Unknown column 'nameproduct' in 'field list'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT nameprod...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nameprod...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nameprod...')
+#3 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(27): CodeIgniter\Database\BaseConnection->query('SELECT nameprod...')
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 12:20:21 --> Undefined index: id
+#0 C:\wamp64\www\datehunter777\app\Views\dashboard_view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 38, Array)
+#1 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('dashboard_view', Array, true)
+#4 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(31): view('dashboard_view', Array)
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-26 12:28:37 --> Cannot add or update a child row: a foreign key constraint fails (`db_datehunter`.`tb_product`, CONSTRAINT `fk_tb_product` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id_user`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+CRITICAL - 2022-01-26 12:28:37 --> Cannot add or update a child row: a foreign key constraint fails (`db_datehunter`.`tb_product`, CONSTRAINT `fk_tb_product` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id_user`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\datehunter777\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(60): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-26 12:38:07 --> Cannot add or update a child row: a foreign key constraint fails (`db_datehunter`.`tb_product`, CONSTRAINT `fk_tb_product` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id_user`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+CRITICAL - 2022-01-26 12:38:07 --> Cannot add or update a child row: a foreign key constraint fails (`db_datehunter`.`tb_product`, CONSTRAINT `fk_tb_product` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id_user`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\datehunter777\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(60): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-26 12:42:38 --> Cannot add or update a child row: a foreign key constraint fails (`db_datehunter`.`tb_product`, CONSTRAINT `fk_tb_product` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id_user`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+CRITICAL - 2022-01-26 12:42:38 --> Cannot add or update a child row: a foreign key constraint fails (`db_datehunter`.`tb_product`, CONSTRAINT `fk_tb_product` FOREIGN KEY (`id_user`) REFERENCES `tb_user` (`id_user`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\datehunter777\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(60): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-01-26 12:56:26 --> required  is not a valid rule.
+#0 C:\wamp64\www\datehunter777\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\wamp64\www\datehunter777\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('name_product', 'name_product', '^^^^', Array, Array)
+#2 C:\wamp64\www\datehunter777\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#3 C:\wamp64\www\datehunter777\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#4 C:\wamp64\www\datehunter777\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#5 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(60): CodeIgniter\Model->insert(Array)
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-01-26 12:57:35 --> required  is not a valid rule.
+#0 C:\wamp64\www\datehunter777\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+#1 C:\wamp64\www\datehunter777\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('name_product', 'name_product', '^^^^', Array, Array)
+#2 C:\wamp64\www\datehunter777\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#3 C:\wamp64\www\datehunter777\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#4 C:\wamp64\www\datehunter777\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#5 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(60): CodeIgniter\Model->insert(Array)
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

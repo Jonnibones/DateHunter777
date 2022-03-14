@@ -1,0 +1,109 @@
+ERROR - 2022-02-28 05:25:35 --> Unknown column 'tb_user.id' in 'where clause'
+CRITICAL - 2022-02-28 05:25:35 --> Unknown column 'tb_user.id' in 'where clause'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '3')
+#6 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(29): CodeIgniter\BaseModel->find('3')
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-02-28 05:26:10 --> Unknown column 'tb_user.id' in 'where clause'
+CRITICAL - 2022-02-28 05:26:10 --> Unknown column 'tb_user.id' in 'where clause'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '3')
+#6 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(29): CodeIgniter\BaseModel->find('3')
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-02-28 05:27:36 --> Unknown column 'tb_user.id' in 'where clause'
+CRITICAL - 2022-02-28 05:27:36 --> Unknown column 'tb_user.id' in 'where clause'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '3')
+#6 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(29): CodeIgniter\BaseModel->find('3')
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-02-28 05:35:12 --> Unknown column 'tb_user.id' in 'where clause'
+CRITICAL - 2022-02-28 05:35:12 --> Unknown column 'tb_user.id' in 'where clause'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '3')
+#6 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(29): CodeIgniter\BaseModel->find('3')
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-02-28 05:36:31 --> Unknown column 'tb_user.id' in 'where clause'
+CRITICAL - 2022-02-28 05:36:31 --> Unknown column 'tb_user.id' in 'where clause'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 3)
+#6 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(29): CodeIgniter\BaseModel->find(3)
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-02-28 05:36:45 --> Unknown column 'tb_user.id' in 'where clause'
+CRITICAL - 2022-02-28 05:36:45 --> Unknown column 'tb_user.id' in 'where clause'
+#0 C:\wamp64\www\datehunter777\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\datehunter777\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\datehunter777\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\datehunter777\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\datehunter777\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 3)
+#6 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(29): CodeIgniter\BaseModel->find(3)
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-28 12:56:58 --> Undefined variable: title
+#0 C:\wamp64\www\datehunter777\app\Views\register_view.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\d...', 17, Array)
+#1 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('register_view', Array, true)
+#4 C:\wamp64\www\datehunter777\app\Controllers\Register.php(9): view('register_view')
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Register->index()
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 12:57:31 --> Undefined variable: title
+#0 C:\wamp64\www\datehunter777\app\Views\register_view.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\d...', 17, Array)
+#1 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('register_view', Array, true)
+#4 C:\wamp64\www\datehunter777\app\Controllers\Register.php(10): view('register_view')
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Register->index()
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-28 13:17:57 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

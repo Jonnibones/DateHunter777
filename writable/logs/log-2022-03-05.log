@@ -1,0 +1,28 @@
+CRITICAL - 2022-03-05 09:10:23 --> Undefined variable: title
+#0 C:\wamp64\www\datehunter777\app\Views\template\header.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\d...', 28, Array)
+#1 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\wamp64\www\datehunter777\app\Views\login_view.php(2): view('template/header')
+#5 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#6 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('login_view', Array, true)
+#8 C:\wamp64\www\datehunter777\app\Controllers\Home.php(9): view('login_view')
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#10 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-03-05 09:11:58 --> syntax error, unexpected '}', expecting ',' or ';'
+#0 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#2 C:\wamp64\www\datehunter777\app\Views\login_view.php(2): view('template/header')
+#3 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#4 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('login_view', Array, true)
+#6 C:\wamp64\www\datehunter777\app\Controllers\Home.php(9): view('login_view')
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#8 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

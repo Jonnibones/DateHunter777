@@ -1,0 +1,33 @@
+CRITICAL - 2022-02-04 12:51:51 --> Undefined property: CodeIgniter\View\View::$load
+#0 C:\wamp64\www\datehunter777\app\Views\login_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\d...', 21, Array)
+#1 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('login_view', Array, true)
+#4 C:\wamp64\www\datehunter777\app\Controllers\Login.php(14): view('login_view', Array)
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-04 12:53:08 --> Undefined property: CodeIgniter\View\View::$load
+#0 C:\wamp64\www\datehunter777\app\Views\login_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\d...', 21, Array)
+#1 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('login_view', Array, true)
+#4 C:\wamp64\www\datehunter777\app\Controllers\Login.php(14): view('login_view', Array)
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-04 18:05:04 --> Undefined index: id_product
+#0 C:\wamp64\www\datehunter777\app\Views\dashboard_view.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 80, Array)
+#1 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('dashboard_view', Array, true)
+#4 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(67): view('dashboard_view', Array)
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->index()
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

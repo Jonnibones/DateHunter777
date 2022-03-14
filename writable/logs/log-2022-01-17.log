@@ -1,0 +1,44 @@
+CRITICAL - 2022-01-17 17:43:05 --> Invalid file: /login.php
+#0 C:\wamp64\www\datehunter777\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/login.php')
+#1 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('/login', Array, true)
+#2 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(100): view('/login', Array)
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#4 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-17 17:45:15 --> Invalid argument supplied for foreach()
+#0 C:\wamp64\www\datehunter777\app\Views\insert_product_view.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\wamp64\\www\\d...', 23, Array)
+#1 C:\wamp64\www\datehunter777\system\View\View.php(210): include('C:\\wamp64\\www\\d...')
+#2 C:\wamp64\www\datehunter777\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\datehunter777\system\Common.php(1089): CodeIgniter\View\View->render('insert_product_...', Array, true)
+#4 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(96): view('insert_product_...', Array)
+#5 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#6 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-17 18:00:25 --> Undefined variable: infos
+#0 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\d...', 111, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-17 18:02:59 --> Undefined index: name_product
+#0 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 92, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-17 18:04:30 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-01-17 18:06:00 --> Undefined index: name_product
+#0 C:\wamp64\www\datehunter777\app\Controllers\Dashboard.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 93, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Dashboard->inserir()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
