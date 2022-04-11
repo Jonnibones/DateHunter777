@@ -1,0 +1,14 @@
+CRITICAL - 2022-03-24 12:49:13 --> Undefined index: email_user
+#0 C:\wamp64\www\datehunter777\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\d...', 40, Array)
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-24 13:10:46 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-24 13:10:47 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-24 13:11:10 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-24 13:11:11 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-24 13:11:31 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-24 13:11:32 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-03-24 13:13:27 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()

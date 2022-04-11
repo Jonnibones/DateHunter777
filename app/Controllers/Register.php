@@ -19,6 +19,15 @@ class Register extends BaseController
 
             $inputs['pass_user'] = password_hash($this->request->getPost('pass_user'), PASSWORD_DEFAULT);
 
+            
+            $numRows = $UsersModel->findAll();
+            
+            if(count($numRows) >= 3)
+            {
+                $session->setFlashdata('msghidden', 'Permissão negada.');
+                return redirect()->to('register');
+            }
+
             if ($UsersModel->insert($inputs))
             {
                 $session->setFlashdata('msghidden', 'Cadastro efetuado com sucesso.');
@@ -29,14 +38,6 @@ class Register extends BaseController
                 $info['values'] = $this->request->getPost();
             }
 
-            $numRows = $UsersModel->findAll();
-            
-            if(count($numRows) == 3)
-            {
-                $session->setFlashdata('msghidden', 'Permissão negada.');
-                return redirect()->to('register');
-            }
-            
         }
         return view('register_view',$info);
     }

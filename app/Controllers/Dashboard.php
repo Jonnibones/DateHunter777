@@ -34,41 +34,6 @@ class Dashboard extends BaseController
             ORDER BY date_exp_product ASC"
         );
 
-        $result = $results->getResult('array');
-
-        $user = $userModel->first($_SESSION['id_user']);
-
-        foreach($result as $row)
-        {
-            // Verificação para envio de e-mail
-           if (date('Y-m-d') >= $row['date_not_product'] && date('Y-m-d') <= $row['date_exp_product'] ) 
-           {
-
-               $dataVal = strtotime($row['date_exp_product']);
-               $dataAtual = strtotime(date('d-m-Y'));
-
-               $difference = $dataVal - $dataAtual;
-
-               echo "<h3> e-mail: Daqui a: ".date('d',$difference)." dias o produto ".$row['name_product']."
-               vai vencer. <br> Data de validade: ".date_format(date_create($row['date_exp_product']), 'd-m-Y')." <br>Observação: ".$row['observ_product'].".<br> Código do produto: ".$row['id']. "</h3>" ;
-
-                //Retirar os echos acima e os comentários abaixo quando em produção
-
-               $email = \Config\Services::email();
-
-               $email->setFrom('E-mail da hospedagem', 'Date Hunter 777');
-               $email->setTo($user['email_user']);
-               //email->setCC('another@another-example.com');
-               //$email->setBCC('them@their-example.com');
-               
-               $email->setSubject('Produto próximo ao vencimento');
-               $email->setMessage("Daqui a: ".date('d',$difference)." dias, o produto ".$row['name_product']."
-               vai vencer. Data de validade: ".$row['date_exp_product']." Observação: ".$row['observ_product']);
-
-               //$email->send();
-               
-           }
-        }
 
         $infos['products'] = $results->getResult('array');
 

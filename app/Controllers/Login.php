@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use Tests\Support\Models\UserModel;
+
 class Login extends BaseController
 {
     public function index()
@@ -9,6 +11,8 @@ class Login extends BaseController
         $session = session();
         
         session_destroy();
+
+       
 
         $infos['title'] = 'Entrar';
         return view('login_view', $infos);
