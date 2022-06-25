@@ -12,8 +12,6 @@ class Login extends BaseController
         
         session_destroy();
 
-       
-
         $infos['title'] = 'Entrar';
         return view('login_view', $infos);
        
@@ -23,54 +21,70 @@ class Login extends BaseController
     {
         $session = session(); 
 
-        if ($this->request->getMethod() === 'post') 
+        if($_POST['g-recaptcha-response'] == '')
         {
-            $userModel = new \App\Models\UsersModel();
+            $session->setFlashdata('msg', 'Campo do recaptcha não foi marcado');
+            return redirect()->to('/login');
+        }
 
-                $email = $this->request->getVar('inp_email');
-                $password = $this->request->getVar('inp_pass');
+        $captcha_data = $_POST['g-recaptcha-response'];
+        $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcPDngfAAAAAG8v-d75rsPJ5WrgqqvcAvYiXRYH&response=".$captcha_data."&remoteip=".$_SERVER['REMOTE_ADDR']);
 
-                if($email == '' || $password == '')
-                {
-                    $session->setFlashdata('msg', 'Campos não podem ser vazios.');
-                    return redirect()->to('/login');
-                }
-
-                $data = $userModel->where('email_user', $email)->first();
-
-            if($data) 
+        if(!$response)
+        {
+            return redirect()->to('/login');
+        }
+        else
+        {
+            if ($this->request->getMethod() === 'post') 
             {
-                $pass = $data['pass_user'];
-                $verify_pass = password_verify($password, $pass);
+                $userModel = new \App\Models\UsersModel();
 
-                if ($verify_pass) 
+                    $email = $this->request->getVar('inp_email');
+                    $password = $this->request->getVar('inp_pass');
+
+                    if($email == '' || $password == '')
+                    {
+                        $session->setFlashdata('msg', 'Campos não podem ser vazios.');
+                        return redirect()->to('/login');
+                    }
+
+                    $data = $userModel->where('email_user', $email)->first();
+
+                if($data) 
                 {
+                    $pass = $data['pass_user'];
+                    $verify_pass = password_verify($password, $pass);
 
-                    $new_data = [
+                    if ($verify_pass) 
+                    {
 
-                        'id_user' => $data['id_user'],
-                        'name_user' => $data['name_user'],
-                        'email_user' => $data['email_user'],
-                        'level_user' => $data['level_user'],
-                        'logged' => TRUE
+                        $new_data = [
 
-                    ];
+                            'id_user' => $data['id_user'],
+                            'name_user' => $data['name_user'],
+                            'email_user' => $data['email_user'],
+                            'level_user' => $data['level_user'],
+                            'logged' => TRUE
 
-                    $session->set($new_data);
-                    return redirect()->to('/dashboard');
+                        ];
+
+                        $session->set($new_data);
+                        return redirect()->to('/dashboard');
+                    }
+                    else
+                    {
+                        //exibir uma mensagem de senha errada e redirecionar para o formulário de login
+                        $session->setFlashdata('msg', 'Senha errada.');
+                        return redirect()->to('/login');
+                    }
                 }
                 else
                 {
-                    //exibir uma mensagem de senha errada e redirecionar para o formulário de login
-                    $session->setFlashdata('msg', 'Senha errada.');
+                    //exibir uma mensagem de nenhum usuário encontrado e redirecionar para o formulário de login
+                    $session->setFlashdata('msg', 'Nenhum registro com este e-mail.');
                     return redirect()->to('/login');
                 }
-            }
-            else
-            {
-                //exibir uma mensagem de nenhum usuário encontrado e redirecionar para o formulário de login
-                $session->setFlashdata('msg', 'Nenhum registro com este e-mail.');
-                return redirect()->to('/login');
             }
         }
     }

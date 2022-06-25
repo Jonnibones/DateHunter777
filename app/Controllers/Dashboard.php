@@ -16,7 +16,7 @@ class Dashboard extends BaseController
         }
 
         $productModel = new \App\Models\ProductsModel();
-        $userModel = new \App\Models\UsersModel();
+        
 
         $infos['title'] = 'Dashboard';
 
@@ -24,13 +24,13 @@ class Dashboard extends BaseController
 
         $results = $productModel->db->query(
             "SELECT 
-            p.id, 
-            p.name_product, 
-            p.date_exp_product, 
-            p.date_not_product, 
-            p.observ_product 
-            FROM db_datehunter.tb_product AS p 
-            WHERE p.id_user = $id 
+            id, 
+            name_product, 
+            date_exp_product, 
+            date_not_product, 
+            observ_product 
+            FROM id18566188_db_datehunter.tb_product 
+            WHERE id_user = $id 
             ORDER BY date_exp_product ASC"
         );
 

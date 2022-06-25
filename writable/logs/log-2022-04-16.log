@@ -1,0 +1,8 @@
+ERROR - 2022-04-16 19:24:19 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-04-16 19:35:48 --> syntax error, unexpected 'else' (T_ELSE)
+#0 C:\wamp64\www\datehunter777\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 C:\wamp64\www\datehunter777\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('login')
+#2 C:\wamp64\www\datehunter777\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\datehunter777\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\datehunter777\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

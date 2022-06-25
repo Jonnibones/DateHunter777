@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'db_datehunter',
+        'database' => 'id18566188_db_datehunter',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

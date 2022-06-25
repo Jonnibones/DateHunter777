@@ -17,7 +17,7 @@
             <h1 class="card-title text-center">DateHunter</h1>
             <h1 class="text-center">Formulário de cadastro</h1>
                 <!-- Form login -->
-                <form action="register" method="post">
+                <form action="register/insert" method="post">
 
                     <div class="form-group">
                         <label>Nome: </label>
@@ -69,6 +69,8 @@
                         <hr>
                         <a href="login" class="btn btn-primary btn-block  ">Voltar para a tela de login</a>
                     </div>
+                    
+                    <div class="g-recaptcha" data-sitekey="6LcPDngfAAAAAFcyNcy0vts4pgTn04kQM9sjRXkU"></div>
 
                 </form>
             </div>
@@ -90,24 +92,24 @@
       
       function confirmaSenha(e)
       {
-            var inputSenha1 = document.getElementById("pass1");
-            var inputSenha2 = document.getElementById("pass2");
-            var senha1 = inputSenha1.value;
-            var senha2 = inputSenha2.value;
-            if(senha1 != senha2)
-            {
-                e.preventDefault();
-                var small = document.getElementById("small_pass2");
-                small.style.visibility = "visible";
-                small.innerText = "Senhas não podem ser diferentes.";
+        var inputSenha1 = document.getElementById("pass1");
+        var inputSenha2 = document.getElementById("pass2");
+        var senha1 = inputSenha1.value;
+        var senha2 = inputSenha2.value;
+        if(senha1 != senha2)
+        {
+            e.preventDefault();
+            var small = document.getElementById("small_pass2");
+            small.style.visibility = "visible";
+            small.innerText = "Senhas não podem ser diferentes.";
 
-                setTimeout(function(){
-                    var smallTimeOut = document.getElementById("small_pass2");
-                    smallTimeOut.style.visibility = "hidden";
-                }, 3000);
-            }
-       }
-        
+            setTimeout(function(){
+                var smallTimeOut = document.getElementById("small_pass2");
+                smallTimeOut.style.visibility = "hidden";
+            }, 3000);
+        }
+      }
+       
       var msg = document.getElementById('msg_sweet').textContent;
         if (msg == 'Cadastro efetuado com sucesso.') 
         {

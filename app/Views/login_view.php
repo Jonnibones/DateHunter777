@@ -44,6 +44,9 @@
                     <div class="row justify-content-center">
                         <a class="btn btn-primary btn-block" id="link_register" href="<?php echo base_url('/register');?>">Cadastre-se</a>
                     </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LcPDngfAAAAAFcyNcy0vts4pgTn04kQM9sjRXkU"></div>
+
                 </form>
             </div>
         </div>
