@@ -8,7 +8,7 @@
         <div class="row">
 
           <div style="padding: 10px;" class="col">
-            <h4 id="welcome" >Bem- <?php session(); echo $_SESSION['name_user'];?></h4>
+            <h4 id="welcome" >Bem-vinda <?php session(); echo $_SESSION['name_user'];?></h4>
           </div>
 
         </div>
