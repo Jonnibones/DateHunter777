@@ -102,7 +102,7 @@ class Dashboard extends BaseController
         }
         
         $session->setFlashdata('msg', 'Acesso Restrito!');
-        return redirect()->to('/login'); 
+        return redirect()->to('/login'); //teste
         
     }
 
